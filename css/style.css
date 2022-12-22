@@ -10,12 +10,19 @@ body {
     overflow-x: hidden;
 }
 
+.name {
+    color: #eee;
+    text-shadow: #555 5px 3px;
+    font-size: 20px;
+}
+
 header {
     text-align: center;
     width: 100%;
     padding-top: 5vh;
     height: 15vh;
-    background-color: #eee;
+    background-color: #222;
+    box-shadow: 0px -20px 20px -20px inset;
     position: absolute;
 }
 
@@ -32,16 +39,13 @@ header {
 }
 
 .ribbon {
+    cursor: pointer;
     display: inline-flex;
     background-color: #000;
     width: fit-content;
     text-align: center;
     padding: 10px;
     transition: padding-top .25s;
-}
-
-.ribbon:hover {
-    cursor: pointer;
 }
 
 footer {
@@ -72,5 +76,6 @@ hr {
 }
 
 .wrapper {
+    width: 80%;
     height: 100vh;
 }

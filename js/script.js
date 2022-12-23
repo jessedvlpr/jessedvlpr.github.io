@@ -14,18 +14,16 @@ function shrink(el) {
     }
 }
 function clicked(el) {
-    el.style.paddingTop = 20 + "px"
     el.setAttribute("toggled", "true")
     el.style.boxShadow = ""
     el.style.color = "#fff"
-    el.style.backgroundColor = "#111"
+    grow(el)
     let els = el.parentElement.getElementsByTagName('*')
     for (let i = 0; i < els.length; i++) {
         if (els[i] == el) { continue }
         els[i].setAttribute("toggled", "false")
-        shrink(els[i])
         els[i].style.boxShadow = "#000 0px -20px 20px -20px inset"
         els[i].style.color = "#444"
-        els[i].style.backgroundColor = "#111"
+        shrink(els[i])
     }
 }

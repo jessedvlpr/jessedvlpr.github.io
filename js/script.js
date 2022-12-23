@@ -6,6 +6,14 @@ for (let i = 0; i < ribbons.length; i++) {
     ribbons[i].onmouseleave = function () { return shrink(this) }
     ribbons[i].setAttribute("toggled", "false")
 }
+let projectsData
+let x = new XMLHttpRequest()
+x.onload = function () {
+    projectsData = JSON.parse(x.responseText)
+}
+x.open('GET', 'https://jessegroves123.github.io/js/projects.json', false)
+x.send()
+
 function grow(el) {
     el.style.paddingTop = 20 + "px"
 }
@@ -41,15 +49,6 @@ function clicked(el) {
 }
 function populateProjects(filters) {
     projectContainer.innerHTML = ""
-    let projectsData
-
-    let x = new XMLHttpRequest()
-    x.onload = function () {
-        projectsData = JSON.parse(x.responseText)
-    }
-    x.open('GET', 'https://jessegroves123.github.io/js/projects.json', false)
-    x.send()
-
     for (let i = 0; i < Object.keys(projectsData).length; i++) {
         let delims = Object.values(projectsData[Object.keys(projectsData)[i]]["delims"])
         if (!filters.includes('all') && !filters.every(r => delims.includes(r))) continue

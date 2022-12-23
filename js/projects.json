@@ -1,20 +1,20 @@
 {
     "1": {
-        "delims": {
-            "1": "python",
-            "2": "pygame",
-            "3": ""
-        },
+        "delims": [
+            "python",
+            "pygame",
+            ""
+        ],
         "title": "Pythtris",
         "description": "This project was my first real venture into the Python programming language, it is a Tetris game made using the Pygame library, for a school project.",
         "thumbnail": "https://jessegroves123.github.io/img/Pythtris.png"
     },
     "2": {
-        "delims": {
-            "1": "python",
-            "2": "pygame",
-            "3": ""
-        },
+        "delims": [
+            "python",
+            "pygame",
+            ""
+        ],
         "title": "Pythtris",
         "description": "This project was my first real venture into the Python programming language, it is a Tetris game made using the Pygame library, for a school project.",
         "thumbnail": "https://jessegroves123.github.io/img/Pythtris.png"

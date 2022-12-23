@@ -41,12 +41,31 @@ function clicked(el) {
 }
 function populateProjects(filters) {
     projectContainer.innerHTML = ""
-    for (let i = 0; i < 10; i++) {
+    let projectsData
+
+    let x = new XMLHttpRequest()
+    x.onload = function () {
+        projectsData = JSON.parse(x.responseText)
+        console.log(x.responseText)
+    }
+    x.open('GET', 'https://jessegroves123.github.io/js/projects.json', false)
+    x.send()
+
+    for (let i = 0; i < Object.keys(projectsData).length; i++) {
         let element = document.createElement('div')
+        let titleElement = document.createElement('div')
+        let imageElement = document.createElement('img')
+
         element.className = "project"
-        let innerElement = document.createElement('div')
-        innerElement.className = "projectName"
-        element.appendChild(innerElement)
+        titleElement.className = "projectName"
+
+        imageElement.style.width = "inherit"
+        imageElement.style.height = "inherit"
+        imageElement.src = projectsData[i].thumbnail
+
+        element.appendChild(titleElement)
+        element.appendChild(imageElement)
+
         projectContainer.appendChild(element)
     }
 }

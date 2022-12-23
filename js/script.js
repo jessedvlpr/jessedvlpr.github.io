@@ -9,7 +9,9 @@ function grow(el) {
     el.style.paddingTop = 20 + "px"
 }
 function shrink(el) {
-    el.style.paddingTop = 10 + "px"
+    if (el.getAttribute("toggled") == "false") {
+        el.style.paddingTop = 10 + "px"
+    }
 }
 function clicked(el) {
     el.style.paddingTop = 20 + "px"

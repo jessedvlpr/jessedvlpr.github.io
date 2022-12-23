@@ -46,25 +46,28 @@ function populateProjects(filters) {
     let x = new XMLHttpRequest()
     x.onload = function () {
         projectsData = JSON.parse(x.responseText)
-        console.log(x.responseText)
     }
     x.open('GET', 'https://jessegroves123.github.io/js/projects.json', false)
     x.send()
 
     for (let i = 0; i < Object.keys(projectsData).length; i++) {
+        let delims = Object.values(projectsData[Object.keys(projectsData)[i]]["delims"])
+        if (!filters.every(r => delims.includes(r))) continue
         let element = document.createElement('div')
-        let titleElement = document.createElement('div')
         let imageElement = document.createElement('img')
+        let titleElement = document.createElement('div')
 
         element.className = "project"
+
         titleElement.className = "projectName"
+        titleElement.innerHTML = projectsData[Object.keys(projectsData)[i]]["title"]
 
         imageElement.style.width = "inherit"
         imageElement.style.height = "inherit"
-        imageElement.src = projectsData[i].thumbnail
+        // imageElement.src = projectsData[Object.keys(projectsData)[i]]["thumbnail"]
 
-        element.appendChild(titleElement)
         element.appendChild(imageElement)
+        element.appendChild(titleElement)
 
         projectContainer.appendChild(element)
     }

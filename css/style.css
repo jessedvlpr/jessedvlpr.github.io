@@ -45,7 +45,7 @@ header {
     width: fit-content;
     text-align: center;
     padding: 10px;
-    transition: padding-top .25s;
+    transition: padding-top .25s, color .1s;
 }
 
 footer {

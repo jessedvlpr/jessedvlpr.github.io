@@ -7,7 +7,7 @@
             "game",
             "school"
         ],
-        "description": "This project was my first real venture into the Python programming language, it is a Tetris game made using the Pygame library, for a school project. I learned a lot while making this game, like little tricks to use in Python (my favourite for this project being a ",
+        "description": "This project was my first real venture into the Python programming language, it is a Tetris game made using the Pygame library, for a school project.",
         "thumbnail": "https://jessegroves123.github.io/img/Pythtris.png",
         "weblink": "",
         "repolink": "https://github.com/jessegroves123/pythtris"

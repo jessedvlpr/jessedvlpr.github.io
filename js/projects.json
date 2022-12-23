@@ -3,20 +3,23 @@
         "delims": [
             "python",
             "pygame",
-            ""
+            "game",
+            "school"
         ],
         "title": "Pythtris",
         "description": "This project was my first real venture into the Python programming language, it is a Tetris game made using the Pygame library, for a school project.",
-        "thumbnail": "https://jessegroves123.github.io/img/Pythtris.png"
+        "thumbnail": "https://jessegroves123.github.io/img/Pythtris.png",
+        "weblink": ""
     },
     "2": {
         "delims": [
-            "python",
-            "pygame",
-            ""
+            "javascript",
+            "vanilla",
+            "website"
         ],
-        "title": "Pythtris",
-        "description": "This project was my first real venture into the Python programming language, it is a Tetris game made using the Pygame library, for a school project.",
-        "thumbnail": "https://jessegroves123.github.io/img/Pythtris.png"
+        "title": "Portfolio",
+        "description": "You're lookin' at it! This is my portfolio website built on JS/HTML/CSS, displaying all of my previously completed projects. In the future I would like to host this page on a more dynamic platform so it can update automatically when I publish a new project.",
+        "thumbnail": "https://jessegroves123.github.io/img/Portfolio.png",
+        "weblink": "https://jessegroves123.github.io"
     }
 }

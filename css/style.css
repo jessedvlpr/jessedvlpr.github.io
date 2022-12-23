@@ -56,10 +56,14 @@ header {
     transition: padding-top .25s, color .1s;
 }
 
-.projects {
+.content {
     color: #fff;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 175px;
+}
+
+.filter-select {
+    height: 75px;
 }
 
 .project {

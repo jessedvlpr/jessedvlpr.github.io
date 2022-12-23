@@ -14,11 +14,20 @@ function shrink(el) {
     }
 }
 function clicked(el) {
+    let els = el.parentElement.getElementsByTagName('*')
+    if (el.getAttribute("toggled") == "true") {
+        el.setAttribute("toggled", "false")
+        for (let i = 0; i < els.length; i++) {
+            els[i].style.boxShadow = ""
+            els[i].style.color = "#fff"
+        }
+        shrink(el)
+        return
+    }
     el.setAttribute("toggled", "true")
     el.style.boxShadow = ""
     el.style.color = "#fff"
     grow(el)
-    let els = el.parentElement.getElementsByTagName('*')
     for (let i = 0; i < els.length; i++) {
         if (els[i] == el) { continue }
         els[i].setAttribute("toggled", "false")

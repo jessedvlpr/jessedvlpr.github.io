@@ -52,7 +52,7 @@ function populateProjects(filters) {
 
     for (let i = 0; i < Object.keys(projectsData).length; i++) {
         let delims = Object.values(projectsData[Object.keys(projectsData)[i]]["delims"])
-        if (!filters.every(r => delims.includes(r))) continue
+        if (!filters.includes('all') && !filters.every(r => delims.includes(r))) continue
         let element = document.createElement('div')
         let imageElement = document.createElement('img')
         let titleElement = document.createElement('div')

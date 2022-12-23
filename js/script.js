@@ -56,14 +56,43 @@ function populateProjects(filters) {
         let titleElement = document.createElement('div')
 
         element.className = "project"
+        element.style.backgroundImage = `url(${projectsData[Object.keys(projectsData)[i]]["thumbnail"]})`
 
         titleElement.className = "projectName"
         titleElement.innerHTML = projectsData[Object.keys(projectsData)[i]]["title"]
 
-        element.style.backgroundImage = `url(${projectsData[Object.keys(projectsData)[i]]["thumbnail"]})`
+        element.onclick = function () {
+            return popup(projectsData[Object.keys(projectsData)[i]]["title"], projectsData[Object.keys(projectsData)[i]]["description"])
+        }
 
         element.appendChild(titleElement)
 
         projectContainer.appendChild(element)
     }
+}
+
+function popup(title, description) {
+    if (document.getElementsByClassName('popup').length > 0) return
+    let element = document.createElement('div')
+    element.className = "popup"
+
+    let titleElement = document.createElement('h1')
+    titleElement.textContent = title
+    titleElement.className = "popup_title"
+
+    let descriptionElement = document.createElement('div')
+    descriptionElement.className = "popup_description"
+    descriptionElement.textContent = description
+
+    let closeElement = document.createElement('a')
+    closeElement.className = "popup_close"
+    closeElement.innerHTML = "X"
+    closeElement.onclick = function () {
+        document.body.removeChild(element)
+    }
+
+    element.appendChild(titleElement)
+    element.appendChild(descriptionElement)
+    element.appendChild(closeElement)
+    document.body.appendChild(element)
 }

@@ -17,6 +17,7 @@ body {
 .name {
     color: #eee;
     margin-top: 50px;
+    min-width: max-content;
     text-shadow: #111 6px 4px;
     font-size: 20px;
 }
@@ -28,6 +29,7 @@ header {
     background-color: #222;
     box-shadow: #000 0px -20px 20px -20px inset;
     position: absolute;
+    top: 0;
 }
 
 .ribbons {
@@ -52,7 +54,14 @@ header {
     transition: padding-top .25s, color .1s;
 }
 
-.projects {}
+.projects {
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    right: 50px;
+    bottom: 0;
+}
 
 footer {
     padding: 20px;

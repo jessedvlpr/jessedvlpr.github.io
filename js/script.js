@@ -53,7 +53,6 @@ function populateProjects(filters) {
         let delims = Object.values(projectsData[Object.keys(projectsData)[i]]["delims"])
         if (!filters.includes('all') && !filters.every(r => delims.includes(r))) continue
         let element = document.createElement('div')
-        let imageElement = document.createElement('img')
         let titleElement = document.createElement('div')
 
         element.className = "project"
@@ -61,11 +60,8 @@ function populateProjects(filters) {
         titleElement.className = "projectName"
         titleElement.innerHTML = projectsData[Object.keys(projectsData)[i]]["title"]
 
-        imageElement.style.width = "inherit"
-        imageElement.style.height = "inherit"
-        // imageElement.src = projectsData[Object.keys(projectsData)[i]]["thumbnail"]
+        element.style.backgroundImage = `url(${projectsData[Object.keys(projectsData)[i]]["thumbnail"]})`
 
-        element.appendChild(imageElement)
         element.appendChild(titleElement)
 
         projectContainer.appendChild(element)

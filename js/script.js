@@ -62,7 +62,13 @@ function populateProjects(filters) {
         titleElement.innerHTML = projectsData[Object.keys(projectsData)[i]]["title"]
 
         element.onclick = function () {
-            return popup(projectsData[Object.keys(projectsData)[i]]["title"], projectsData[Object.keys(projectsData)[i]]["description"])
+            let thumbnail = projectsData[Object.keys(projectsData)[i]]["thumbnail"]
+            let title = projectsData[Object.keys(projectsData)[i]]["title"]
+            let tags = projectsData[Object.keys(projectsData)[i]]["delims"]
+            let description = projectsData[Object.keys(projectsData)[i]]["description"]
+            let weblink = projectsData[Object.keys(projectsData)[i]]["weblink"]
+            let repolink = projectsData[Object.keys(projectsData)[i]]["repolink"]
+            return popup(thumbnail, title, description, tags, weblink, repolink)
         }
 
         element.appendChild(titleElement)
@@ -71,7 +77,7 @@ function populateProjects(filters) {
     }
 }
 
-function popup(title, description) {
+function popup(thumbnail, title, tags, description, weblink, repolink) {
     if (document.getElementsByClassName('popup').length > 0) return
     let element = document.createElement('div')
     element.className = "popup"

@@ -76,6 +76,11 @@ header {
     height: 200px;
     text-align: left;
     box-shadow: #000 0px 0px 20px 20px inset;
+    transition: box-shadow .25s;
+}
+
+.project:hover {
+    box-shadow: #000 0px 0px 15px 15px inset;
 }
 
 .projectName {

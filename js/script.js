@@ -68,7 +68,7 @@ function populateProjects(filters) {
             let description = projectsData[Object.keys(projectsData)[i]]["description"]
             let weblink = projectsData[Object.keys(projectsData)[i]]["weblink"]
             let repolink = projectsData[Object.keys(projectsData)[i]]["repolink"]
-            return popup(thumbnail, title, description, tags, weblink, repolink)
+            return popup(thumbnail, title, tags, description, weblink, repolink)
         }
 
         element.appendChild(titleElement)

@@ -7,28 +7,32 @@
         <title>Jesse Groves</title>
         <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/globals.css">
     </head>
 
     <body>
         <header>
-            <div class="name">
-                <h1>Jesse Groves: Developer & Designer</h1>
+            <div id="ribbons" class="absolute-centered-x">
+                <div id="about-ribbon" class="ribbon">About Me</div>
+                <div id="projects-ribbon" class="ribbon">Projects</div>
+                <div id="experience-ribbon" class="ribbon">Experience</div>
+                <div id="education-ribbon" class="ribbon">Education</div>
+                <div id="contact-ribbon" class="ribbon">Contact Me</div>
             </div>
         </header>
-        <div class="wrapper">
-            <div class="content">
-                <div class="projects">
-                    <div class="top-bar">
-                        <div class="ribbons">
-                            <div id="all_ribbon" class="ribbon">All Projects</div>
-                            <div id="java_ribbon" class="ribbon">Java</div>
-                            <div id="javascript_ribbon" class="ribbon">JavaScript</div>
-                            <div id="python_ribbon" class="ribbon">Python</div>
-                            <div id="other_ribbon" class="ribbon">Other</div>
-                        </div>
-                    </div>
-                    <div class="projects-list"></div>
-                </div>
+        <div id="wrapper">
+            <div id="top">
+                <section id="constraints"></section>
+            </div>
+            <div id="main">
+                <section id="about">
+                    Hi, My name is Jesse Groves. I do all sorts of development.
+                </section>
+                <section id="projects"></section>
+                <section id="experience"></section>
+                <section id="education"></section>
+                <section id="contact"></section>
             </div>
         </div>
         <footer>

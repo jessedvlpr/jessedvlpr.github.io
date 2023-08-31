@@ -1,10 +1,10 @@
-if (!checkCookie('fg')) setCookie('fg', [56, 56, 56], 365);
-if (!checkCookie('bg')) setCookie('bg', [23, 23, 23], 365);
-if (!checkCookie('text')) setCookie('text', [255, 255, 255], 365);
+if (!checkCookie('hm-fg')) setCookie('hm-fg', [56, 56, 56], 365);
+if (!checkCookie('hm-bg')) setCookie('hm-bg', [23, 23, 23], 365);
+if (!checkCookie('hm-text')) setCookie('hm-text', [255, 255, 255], 365);
 
-changeColour('fg')
-changeColour('bg')
-changeColour('text')
+changeColour('hm-fg')
+changeColour('hm-bg')
+changeColour('hm-text')
 
 function colourPicker(area) {
     let pckr = document.getElementById('colour-picker-' + area).value;
@@ -28,12 +28,12 @@ function changeColour(area) {
 }
 
 function resetColours() {
-    setCookie('fg', [56, 56, 56], 365);
-    setCookie('bg', [23, 23, 23], 365);
-    setCookie('text', [255, 255, 255], 365);
-    changeColour('fg');
-    changeColour('bg');
-    changeColour('text');
+    setCookie('hm-fg', [56, 56, 56], 365);
+    setCookie('hm-bg', [23, 23, 23], 365);
+    setCookie('hm-text', [255, 255, 255], 365);
+    changeColour('hm-fg');
+    changeColour('hm-bg');
+    changeColour('hm-text');
 }
 
 function setCookie(name, value, days) {

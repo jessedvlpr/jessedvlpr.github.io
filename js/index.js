@@ -2,9 +2,9 @@ if (!checkCookie('hm-fg')) setCookie('hm-fg', [56, 56, 56], 365);
 if (!checkCookie('hm-bg')) setCookie('hm-bg', [23, 23, 23], 365);
 if (!checkCookie('hm-text')) setCookie('hm-text', [255, 255, 255], 365);
 
-changeColour('hm-fg')
-changeColour('hm-bg')
-changeColour('hm-text')
+changeColour('fg')
+changeColour('bg')
+changeColour('text')
 
 function colourPicker(area) {
     let pckr = document.getElementById('colour-picker-' + area).value;
@@ -16,7 +16,7 @@ function colourPicker(area) {
 }
 
 function changeColour(area) {
-    let c = getCookie(area).split(',');
+    let c = getCookie("hm-" + area).split(',');
     document.documentElement.style.setProperty('--' + area + '-colour', `rgb(${c[0]}, ${c[1]}, ${c[2]})`);
     let hexC = '#';
     for (let i = 0; i < c.length; i++) {
@@ -31,9 +31,9 @@ function resetColours() {
     setCookie('hm-fg', [56, 56, 56], 365);
     setCookie('hm-bg', [23, 23, 23], 365);
     setCookie('hm-text', [255, 255, 255], 365);
-    changeColour('hm-fg');
-    changeColour('hm-bg');
-    changeColour('hm-text');
+    changeColour('fg');
+    changeColour('bg');
+    changeColour('text');
 }
 
 function setCookie(name, value, days) {

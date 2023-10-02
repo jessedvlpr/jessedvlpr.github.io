@@ -36,13 +36,10 @@ body {
 #wrapper {
     position: relative;
     min-height: 100vh;
-    background-color: var(--fg-colour);
     color: var(--text-colour);
     width: 80%;
     margin: 0 auto;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: color-mix(in srgb, var(--bg-colour), rgb(20, 20, 20)) 0px 20px 20px 0px;
     overflow-y: hidden;
 }
 

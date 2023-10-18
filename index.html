@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jesse Groves</title>
-        <link rel="icon" href="favicon.png">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  ">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jesse Groves</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  ">
+</head>
 
-    <body>
-        <div id="screen-cover"></div>
-        <div id="navbar">
-            <div class="circle-button" id="navbar-widget" onclick="toggleNavbar()">
-                <i class="fa fa-bars"></i>
-            </div>
-            <div id="logo"></div>
-            <a class="navbutton" href="./files/Resume.pdf" download onclick="toggleNavbar()">Download Resume (144kb)</a>
-            <a class="navbutton" href="/" onclick="toggleNavbar()">Home</a>
-            <a class="navbutton" href="/Portfolio/" onclick="toggleNavbar()">Portfolio</a>
-            <a class="navbutton" href="/GlyphCrafter/" onclick="toggleNavbar()">GlyphCrafter</a>
-            <a class="navbutton" href="/IdeaGenerator/" onclick="toggleNavbar()">Idea Generator</a>
-            <div id="colour-picker-box">
-                <label for="colour-picker-fg">Foreground Colour</label>
-                <input class="colour-picker" oninput="colourPicker('hm-fg')" id="colour-picker-fg" type="color"><br>
-                <label for="colour-picker-fg">Background Colour</label>
-                <input class="colour-picker" oninput="colourPicker('hm-bg')" id="colour-picker-bg" type="color"><br>
-                <label for="colour-picker-fg">Text Colour</label>
-                <input class="colour-picker" oninput="colourPicker('hm-text')" id="colour-picker-text"
-                    type="color"><br><br>
-                <p><i>Saved as Cookies!</i></p><br>
-                <a class="navbutton" onclick="resetColours(); toggleNavbar()">Reset</a>
-            </div>
-            <div id="socials">
-                <a href="https://github.com/jessegroves123" target="_blank" onclick="toggleNavbar()">
-                    <i class="fa-brands fa-github"></i>
+<body>
+    <div id="screen-cover"></div>
+    <div id="navbar">
+        <div class="circle-button" id="navbar-widget" onclick="toggleNavbar()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div id="logo"></div>
+        <a class="navbutton" href="./files/Resume.pdf" download onclick="toggleNavbar()">Download Resume (144kb)</a>
+        <a class="navbutton" href="/" onclick="toggleNavbar()">Home</a>
+        <a class="navbutton" href="/Portfolio/" onclick="toggleNavbar()">Portfolio</a>
+        <a class="navbutton" href="/GlyphCrafter/" onclick="toggleNavbar()">GlyphCrafter</a>
+        <a class="navbutton" href="/IdeaGenerator/" onclick="toggleNavbar()">Idea Generator</a>
+        <div id="colour-picker-box">
+            <label for="colour-picker-fg">Foreground Colour</label>
+            <input class="colour-picker" oninput="colourPicker('hm-fg')" id="colour-picker-fg" type="color"><br>
+            <label for="colour-picker-fg">Background Colour</label>
+            <input class="colour-picker" oninput="colourPicker('hm-bg')" id="colour-picker-bg" type="color"><br>
+            <label for="colour-picker-fg">Text Colour</label>
+            <input class="colour-picker" oninput="colourPicker('hm-text')" id="colour-picker-text" type="color"><br><br>
+            <p><i>Saved as Cookies!</i></p><br>
+            <a class="navbutton" onclick="resetColours(); toggleNavbar()">Reset</a>
+        </div>
+        <div id="socials">
+            <a href="https://github.com/jessegroves123" target="_blank" onclick="toggleNavbar()">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/jessegroves" target="_blank" onclick="toggleNavbar()">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+    <div id="wrapper">
+        <h1>Website Under Construction...</h1><br>
+        <hr><br>
+        <h2><u>Client Demos</u></h2><br>
+        <div id="client-demos">
+            <div id="ethan-felskie-demos">
+                <p>Ethan Felskie</p>
+                <a href="/client-demos/ethan-felskie/demo1/">
+                    <p>demo1</p>
                 </a>
-                <a href="https://linkedin.com/in/jessegroves" target="_blank" onclick="toggleNavbar()">
-                    <i class="fa-brands fa-linkedin"></i>
+                <a href="/client-demos/ethan-felskie/demo2/">
+                    <p>demo2</p>
+                </a>
+                <a href="/client-demos/ethan-felskie/demo3/">
+                    <p>demo3</p>
                 </a>
             </div>
         </div>
-        <div id="wrapper">
-            <h1>Website Under Construction...</h1><br>
-        </div>
-        <footer>
-            <hr>
-            <a href="mailto:grovesjesse@gmail.com">Contact Me</a>
-            <p>Jesse Groves © 2023</p>
-        </footer>
-    </body>
-    <script src="js/cookies.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/index.js"></script>
+    </div>
+    <footer>
+        <hr>
+        <a href="mailto:grovesjesse@gmail.com">Contact Me</a>
+        <p>Jesse Groves © 2023</p>
+    </footer>
+</body>
+<script src="js/cookies.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/index.js"></script>
 
 </html>

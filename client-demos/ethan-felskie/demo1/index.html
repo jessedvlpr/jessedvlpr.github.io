@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo 1</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  ">
+</head>
+
+<body>
+    <div id="screen-cover"></div>
+    <div id="header">
+        <div id="nameplate">Ethan Felskie</div>
+    </div>
+    <div id="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Gallery</a>
+        <a href="">Contact</a>
+        <a href="">Store</a>
+    </div>
+    <div id="wrapper">
+        <div id="cycle-next" onclick="cycleNext()"></div>
+        <div id="cycle-prev" onclick="cyclePrev()"></div>
+        <div id="cycle-dots"></div>
+        <div id="element-cycler">
+            <div class="artpiece active">
+                <img src="art1.jpg" height="400" />
+                <h3>Piece's Title</h3>
+                <p>Description</p>
+            </div>
+            <div class="artpiece">
+                <img src="art2.jpg" height="600" />
+                <h3>Piece's Title</h3>
+                <p>Description</p>
+            </div>
+            <div class="artpiece">
+                <img src="art3.jpg" height="800" />
+                <h3>Piece's Title</h3>
+                <p>Description</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <p>© 2023 Ethan Felskie</p>
+        <p>Site Design: <a href="https://grovesjesse.com" target="_blank">Jesse Groves</a></p>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+
+</html>

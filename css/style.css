@@ -43,6 +43,63 @@ body {
     overflow-y: hidden;
 }
 
+#client-demos {
+    width: 100%;
+    box-sizing: border-box;
+    display: table;
+    table-layout: fixed;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 10px;
+    border: 2px solid var(--fg-colour)
+}
+
+#client-demos>div {
+    position: relative;
+    display: table-cell;
+    width: min-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#client-demos>div:before {
+    content: "\f07b";
+    font-family: FontAwesome;
+    font-size: 100px;
+    text-decoration: none;
+    color: var(--fg-colour);
+}
+
+#client-demos>div:hover:before {
+    content: "\f07c";
+}
+
+#client-demos>div:hover a {
+    display: block;
+}
+
+#client-demos a {
+    display: none;
+    text-decoration: none;
+    margin-left: 20px;
+    width: fit-content;
+    color: var(--text-colour);
+    cursor: pointer;
+}
+
+#client-demos a:before {
+    content: "\f061";
+    font-family: FontAwesome;
+    font-size: 100px;
+    text-decoration: none;
+    color: var(--fg-colour);
+}
+
+#client-demos a:hover:before {
+    color: color-mix(in srgb, var(--fg-colour), rgb(20, 20, 20))
+}
+
 #colour-picker-box {
     color: var(--text-colour);
     margin: 20px;

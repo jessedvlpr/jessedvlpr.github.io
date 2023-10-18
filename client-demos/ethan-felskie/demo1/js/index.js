@@ -7,6 +7,7 @@ function cycleNext() {
             if (i == Array.from(pieces).length - 1) {
                 Array.from(pieces)[i].classList.remove('active');
                 Array.from(pieces)[0].classList.add('active');
+                break;
             } else {
                 Array.from(pieces)[i].classList.remove('active');
                 Array.from(pieces)[i + 1].classList.add('active');
@@ -22,6 +23,7 @@ function cyclePrev() {
             if (i == 0) {
                 Array.from(pieces)[i].classList.remove('active');
                 Array.from(pieces)[Array.from(pieces).length - 1].classList.add('active');
+                break;
             } else {
                 Array.from(pieces)[i].classList.remove('active');
                 Array.from(pieces)[i - 1].classList.add('active');
@@ -30,7 +32,3 @@ function cyclePrev() {
         }
     }
 }
-
-Array.from(pieces).forEach((e) => {
-    if (true);
-});

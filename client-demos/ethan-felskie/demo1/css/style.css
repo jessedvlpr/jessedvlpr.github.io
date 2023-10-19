@@ -153,6 +153,7 @@ body {
     left: 350px;
     margin: 15px;
     transition: left .25s;
+    display: none;
 }
 
 
@@ -271,4 +272,32 @@ footer p {
 hr {
     border-color: var(--text-colour);
     margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    #navbar-wrapper {
+        left: 0 !important;
+    }
+
+    #screen-cover {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar-wrapper {
+        left: -350px;
+    }
+
+    #navbar-widget {
+        display: block;
+    }
+
+    #header {
+        margin-left: 0;
+    }
+
+    #wrapper {
+        margin-left: 0;
+    }
 }

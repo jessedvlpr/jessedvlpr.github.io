@@ -1,7 +1,9 @@
 var navbarIsOpen = false;
+var galleryIsOpen = false;
 var navbarIcon = document.getElementById('navbar-widget');
-var navbar = document.getElementById('navbar');
+var navbar = document.getElementById('navbar-wrapper');
 var screenCover = document.getElementById('screen-cover');
+var galleryDropdown = document.getElementById('navbuttons-gallery');
 
 function openNavbar() {
     navbarIcon.style.left = '100%';
@@ -24,4 +26,15 @@ function closeNavbar() {
 function toggleNavbar() {
     if (navbarIsOpen) closeNavbar();
     else openNavbar();
+}
+
+function openGallery() {
+    galleryIsOpen = true;
+}
+function closeGallery() {
+    galleryIsOpen = false;
+}
+function toggleGallery() {
+    if (galleryIsOpen) closeGallery();
+    else openGallery();
 }

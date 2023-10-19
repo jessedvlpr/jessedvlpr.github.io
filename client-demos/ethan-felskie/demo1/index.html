@@ -16,23 +16,35 @@
     <div id="header">
         <div id="nameplate">Ethan Felskie</div>
     </div>
-    <div id="navbar">
-        <div class="circle-button" id="navbar-widget" onclick="toggleNavbar()">
-            <i class="fa fa-bars"></i>
-        </div>
-        <div id="navbar-header"></div>
-        <div id="navbuttons">
-            <a class="navbutton" href="#" onclick="toggleNavbar()">Home</a>
-            <a class="navbutton" href="#" onclick="toggleNavbar()">About</a>
-            <a class="navbutton" href="#" onclick="toggleNavbar()">Gallery</a>
-            <a class="navbutton" href="#" onclick="toggleNavbar()">Contact</a>
-            <a class="navbutton" href="#" onclick="toggleNavbar()">Store</a>
-        </div>
-        <div id="socials">
-            <br>
-            <a href="https://instagram.com/ethanf2370/" target="_blank" onclick="toggleNavbar()">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+    <div id="navbar-wrapper">
+        <div id="navbar">
+            <h1>Ethan Felskie</h1><br>
+            <div id="navbar-header"></div>
+            <div id="navbuttons">
+                <a class="navbutton" href="#" onclick="toggleNavbar()">Home</a>
+                <a class="navbutton" href="#" onclick="toggleNavbar()">About</a>
+                <a class="navbutton" onclick="toggleGallery()">Gallery <i class="fa fa-arrow-right"></i></a>
+                <div id="navbuttons-gallery">
+                    <a class="navbutton" href="#" onclick="toggleNavbar()">2020</a>
+                    <a class="navbutton" href="#" onclick="toggleNavbar()">2021</a>
+                    <a class="navbutton" href="#" onclick="toggleNavbar()">2022</a>
+                    <a class="navbutton" href="#" onclick="toggleNavbar()">2023</a>
+                    <a class="navbutton" href="#" onclick="toggleNavbar()">2024</a>
+                </div>
+                <a class="navbutton" href="#" onclick="toggleNavbar()">Shows</a>
+                <a class="navbutton" href="#" onclick="toggleNavbar()">Contact</a>
+            </div>
+            <div id="socials">
+                <br>
+                <a href="https://instagram.com/ethanf2370/" target="_blank" onclick="toggleNavbar()">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div id="footer">
+                <hr>
+                <p>© 2023 Ethan Felskie</p>
+                <p>Site Design: <a href="https://grovesjesse.com" target="_blank"><strong>Jesse Groves</strong></a></p>
+            </div>
         </div>
     </div>
     <div id="wrapper">
@@ -42,28 +54,23 @@
             <div id="cycle-dots"></div>
             <div id="cycler-elements">
                 <div class="artpiece active">
-                    <img src="art1.jpg" height="400" />
+                    <img src="art/art1.jpg" height="400" />
                     <h3>Piece's Title</h3>
                     <p>Description</p>
                 </div>
                 <div class="artpiece">
-                    <img src="art2.jpg" height="600" />
+                    <img src="art/art2.jpg" height="600" />
                     <h3>Piece's Title</h3>
                     <p>Description</p>
                 </div>
                 <div class="artpiece">
-                    <img src="art3.jpg" height="800" />
+                    <img src="art/art3.jpg" height="800" />
                     <h3>Piece's Title</h3>
                     <p>Description</p>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <hr>
-        <p>© 2023 Ethan Felskie</p>
-        <p>Site Design: <a href="https://grovesjesse.com" target="_blank">Jesse Groves</a></p>
-    </footer>
 </body>
 <script src="js/index.js"></script>
 <script src="js/navbar.js"></script>

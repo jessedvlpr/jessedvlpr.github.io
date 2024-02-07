@@ -153,7 +153,6 @@ body {
     left: 350px;
     margin: 15px;
     transition: left .25s;
-    display: none;
 }
 
 
@@ -282,6 +281,12 @@ hr {
     #screen-cover {
         display: none;
     }
+
+    #navbar-widget {
+        z-index: -1 !important;
+        left: 0 !important;
+        pointer-events: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -290,7 +295,9 @@ hr {
     }
 
     #navbar-widget {
+        z-index: -1 !important;
         display: block;
+        pointer-events: all;
     }
 
     #header {

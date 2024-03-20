@@ -25,12 +25,12 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', serif, sans-serif, sysem-ui;
     scrollbar-width: none;
 }
 
 body {
     background-color: var(--bg-colour);
+    font-family: 'Roboto', serif, sans-serif, sysem-ui;
 }
 
 #wrapper {
@@ -167,6 +167,7 @@ body {
     transition: left .25s;
     box-shadow: #000 0px 0px 20px 0px;
     color: var(--text-colour);
+    font-family: 'Fredoka', serif, sans-serif, sysem-ui;
 }
 
 #navbar a {
